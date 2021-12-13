@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <title>Tanks Wars 2021</title>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/TankScene.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    debug: false,
+                    gravity: {
+                        y: 0
+                    } // Top down game, so no gravity
+                }
+            },
+            pixelArt: false,
+            scene: TankScene
+        };
+        var game = new Phaser.Game(config);
+    </script>
+</body>
+
+</html>
