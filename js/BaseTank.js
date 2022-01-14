@@ -1,8 +1,10 @@
 class BaseTank{
     /** @type {number} */
-    tankSpeed = 100
+    tankSpeed = 300
     /** @type {number} */
     damageMax = 2
+    /** @ytpe {Phaser.Physics.Arcade.Group} */
+    bullets
     constructor(scene,x,y,texture,frame){
         this.scene = scene
         this.shadow = this.scene.add.image(x,y,texture,'shadow')
@@ -20,26 +22,29 @@ class BaseTank{
         this.shadow.x = this.turret.x = this.hull.x
         this.shadow.y = this.turret.y = this.hull.y
         this.shadow.rotation = this.hull.rotation
-        
     }
     damage(){
 
     }
-    setBullets(){
-
+    setBullets(bullets){
+        this.bullets = bullets
     }
     burn(){
-
+        this.turret.setVisible(false)
+        this.hull.setVelocity(0)
+        this.hull.body.immovable = true
     }
     isDestroyed(){
-
+        if(this.damageCount >= this.damageMax){
+            return true
+        }
     }
     isImmobilised(){
-
+        if(this.damageCount >= this.damageMax -1){
+            return true
+        }
     }
     enableCollision(destructLayer){
         this.scene.physics.add.collider(this.hull, destructLayer)
-
     }
-
 }
