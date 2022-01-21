@@ -1,6 +1,6 @@
 class BossTank extends EnemyTank{
     /**@type {number} */
-    shotInterval = 500
+    shotInterval = 700
     /**@type {number} */
     tankSpeed = 50
     /** @type {number} */

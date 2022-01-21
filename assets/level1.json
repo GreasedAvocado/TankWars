@@ -34,14 +34,14 @@
                 {
                  "height":0,
                  "id":1,
-                 "name":"",
+                 "name":"Player",
                  "point":true,
                  "rotation":0,
                  "type":"playerSpawn",
                  "visible":true,
                  "width":0,
-                 "x":784.519056261343,
-                 "y":415.633393829401
+                 "x":784.519,
+                 "y":415.633
                 }, 
                 {
                  "height":0,
@@ -52,8 +52,8 @@
                  "type":"enemySpawn",
                  "visible":true,
                  "width":0,
-                 "x":250.889292196007,
-                 "y":237.480943738657
+                 "x":250.889,
+                 "y":237.481
                 }, 
                 {
                  "height":0,
@@ -64,8 +64,8 @@
                  "type":"enemySpawn",
                  "visible":true,
                  "width":0,
-                 "x":1732.75862068966,
-                 "y":136.116152450091
+                 "x":1732.76,
+                 "y":136.116
                 }, 
                 {
                  "height":0,
@@ -76,8 +76,8 @@
                  "type":"enemySpawn",
                  "visible":true,
                  "width":0,
-                 "x":1455.42925045372,
-                 "y":389.781337568058
+                 "x":1455.43,
+                 "y":389.781
                 }, 
                 {
                  "height":0,
@@ -88,8 +88,8 @@
                  "type":"speedSpawn",
                  "visible":true,
                  "width":0,
-                 "x":1001.81488203267,
-                 "y":162.613430127042
+                 "x":1001.81,
+                 "y":162.613
                 }],
          "opacity":1,
          "type":"objectgroup",

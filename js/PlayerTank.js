@@ -15,11 +15,11 @@ class PlayerTank extends BaseTank{
         super.update()
         if(this.keys.w.isDown){
             if(this.currentSpeed < this.tankSpeed){
-                this.currentSpeed += 10
+                this.currentSpeed += 7
             }
         }else if(this.keys.s.isDown){
             if(this.currentSpeed > -this.tankSpeed){
-                this.currentSpeed -= 10
+                this.currentSpeed -= 7
             }
         }else(
             this.currentSpeed *= 0.9
